@@ -1,0 +1,223 @@
+/* seteando etiquetas */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+hr {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+figure {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+/* seteando etiquetas */
+
+
+
+/* clases reutilizables */
+.bg-lightgray {
+    background-color: lightgray;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.pd {
+    padding: 3vh;
+}
+.pd-2 {
+    padding: 2vh 2vh 0 2vh;
+}
+
+.blue {
+    color: blue;
+}
+.red {
+    color: red;
+}
+.gray {
+    color: gray;
+}
+
+.width-100 {
+    width: 100%;
+}
+/* clases reutilizables */
+
+
+.header {
+    width: 100%;
+    position: relative;
+    height: 10vh;
+    background-color: blueviolet
+}
+
+.title {
+    line-height: 10vh;        
+}
+
+.layout {
+    height: 20vh;
+    background: lightgray;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 5vw;
+    top: 1vh;
+}
+.arrow {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.gray-icon {
+    color: lightgray;
+}
+
+.bio-icon {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 10vh;
+    left: 2vh;
+}
+.bio-icon img {
+    height: 120px;
+    width: 120px;
+}
+
+.icon-img-responsive {
+    max-height: 100%;
+    max-width: 100%;
+}
+.bio-info {
+    margin-top: 63px;
+    padding: 0 2vh 3vh 2vh;
+}
+
+li:nth-child(4n) {
+    display: inline-block;
+    float: left;
+    margin-right:50px;
+}
+
+.centinel:after {
+    content: '';
+    background-color: lightgray;
+    display: block;
+    height: 10px;
+}
+.p-content-editable {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.btn-tweet {
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+    font-weight: bold;
+    color: #fff;
+    background: blueviolet;
+}
+.tab {
+    height: 50px;
+    color: gray;
+    font-weight: 700;
+    line-height: 50px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+.myTeewt {
+    height: auto;
+    border-top: 1px solid lightgray;
+    position: relative;
+}
+
+.cross {
+    position: absolute;
+    top: 1.8vh;
+    right: 2vh;
+}
+
+.icon-tweet {
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    float: left;
+}
+
+.icon-tweet img {
+    height: 60px;
+    width: 60px;
+}
+
+.text-tweet {
+    height: auto;
+    min-height: 80px;
+    width: 75%;
+    display: inline-block;
+}
+ 
+.data-tweet {
+    overflow: auto;
+    /* margin-bottom: 5px; */
+}
+.data-tweet li {
+    display: inline-block;
+    float: left;
+}
+
+.data-tweet li:nth-child(2n), .data-tweet li:nth-child(3n) {
+    margin-left: 4px;
+}
+
+.tweet {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding:3px;
+}
+
+.name {
+    font-weight: bold;
+   
+}
+
+.main-container {
+    max-width: 500px;
+    margin-left: auto;
+  margin-right: auto;
+}
+.display-flex {
+   
+
+}
+
+
+
+/* tablet pequeña */
+@media (min-width: 600px) { @content; }
+ 
+/* tablet normal  */
+@media (min-width: 900px) { @content; }
+  
+/* desktop */
+@media (min-width: 1200px) { @content; }
+
+
+
+
