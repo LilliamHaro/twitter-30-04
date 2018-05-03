@@ -58,7 +58,7 @@ h3 {
     width: 100%;
     position: relative;
     height: 10vh;
-    background-color: blueviolet
+    background-color: blueviolet;
 }
 
 .title {
@@ -133,7 +133,11 @@ li:nth-child(4n) {
     padding: 8px 12px 8px 12px;
     font-weight: bold;
     color: #fff;
-    background: blueviolet;
+    background: red;
+}
+
+.active-btn {
+ background: blueviolet;
 }
 .tab {
     height: 50px;
@@ -204,11 +208,44 @@ li:nth-child(4n) {
 }
 
 /* tablet pequeña */
-@media (min-width: 600px) { @content; }
- 
+@media (min-width: 600px) { 
+    .main-container {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-tweet {
+        width: 88%;
+    }
+ }
+
 /* tablet normal  */
-@media (min-width: 900px) { @content; }
-  
+@media (min-width: 900px) { 
+    .main-container {
+        max-width: 2000px;
+        width: 95vw;
+        padding: 2vh;
+    }
+
+    .bio{
+        width: 26vw;
+        display: inline-block;
+        float: left;
+    }
+    .tweeting-zone {
+        width: 66vw;
+        display: inline-block;
+        float: right;
+    }
+    .tweets-box {
+        width: 66vw;
+        display: inline-block;
+        float: right;
+    }
+       
+        
+ }
+
 /* desktop */
 @media (min-width: 1200px) { @content; }
 

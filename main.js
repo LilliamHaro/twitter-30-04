@@ -16,6 +16,7 @@ $(document).ready(function() {
     charLimit <= 20 ? $('#char').addClass('blue'): $('#char').removeClass('blue');
     charLimit <= 10 ? $('#char').addClass('red'): $('#char').removeClass('red');
     charLimit <= 0 ? tweetBtn.attr("disabled", true) : tweetBtn.attr("disabled", false);
+    // tweetBtn.attr("disabled", true) ? tweetBtn.addClass('active-btn'): tweetBtn.removeClass('active-btn');
     $('#char').text(charLimit);
    });
 
