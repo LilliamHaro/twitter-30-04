@@ -133,11 +133,11 @@ li:nth-child(4n) {
     padding: 8px 12px 8px 12px;
     font-weight: bold;
     color: #fff;
-    background: red;
+    background: blueviolet ;
 }
 
 .active-btn {
- background: blueviolet;
+ background: red ;
 }
 .tab {
     height: 50px;
