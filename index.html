@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A Oikawa Tooru</title>
+    <title>Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
@@ -17,37 +17,40 @@
     <header class="header">
         <h1 class="title text-center">Twitter</h1>
     </header>
-    <div class=" width-100 display-flex">
+    <div class=" width-100 display-flex ">
         <main class="main-container">
-            <div class="bio centinel bg-white">
+            <div class="bio  bg-white">
                 <div class="layout">
-                    <span class="icon">
-                            <i class="fas fa-arrow-left arrow"></i>
-                    </span>
-                    <figure class="bio-icon">
-                        <img class="rounded-circle img-thumbnail " src="https://78.media.tumblr.com/aa484e9dad8c86c89639331c2d84eccb/tumblr_o79do1B2Jx1udv4k1o1_250.png"
-                            alt="">
-                    </figure>
-                </div>
 
-                <ul class="bio-info">
-                    <li>
-                        <h3>Oikawa Tooru </h3>
-                    </li>
-                    <li>@theGreatKing</li>
-                    <li>Iwa-chan knows me that's enough for me °3°</li>
-                    <li>
-                        <span class="gray-icon">
-                            <i class="fas fa-map-marker"></i>
-                        </span> Miyagi</li>
-                    <li>
-                        <span class="gray-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </span> July 20</li>
-                </ul>
+                </div>
+                <div class="layout-data"></div>
             </div>
 
-            <div class="tweeting-zone centinel bg-white">
+            <ul class="bio-info ">
+                <span class="icon">
+                    <i class="fas fa-arrow-left arrow"></i>
+                </span>
+                <figure class="bio-icon">
+                    <img class="rounded-circle img-thumbnail " src="https://78.media.tumblr.com/aa484e9dad8c86c89639331c2d84eccb/tumblr_o79do1B2Jx1udv4k1o1_250.png"
+                        alt="">
+                </figure>
+                <li>
+                    <h3>Oikawa Tooru </h3>
+                </li>
+                <li>@theGreatKing</li>
+                <li>Iwa-chan knows me that's enough for me °3°</li>
+                <li>
+                    <span class="gray-icon">
+                        <i class="fas fa-map-marker"></i>
+                    </span> Miyagi</li>
+                <li>
+                    <span class="gray-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </span> July 20</li>
+            </ul>
+
+
+            <div class="tweeting-zone  bg-white width-50 float-left">
                 <div class="pd">
                     <div class="d-flex justify-content-center">
                         <p contenteditable="true" class="p-content-editable" id="textarea"></p>
@@ -57,16 +60,19 @@
                         <span id="char">144</span>
                     </div>
                 </div>
+                <div class="tweets-box bg-white centinel">
+                    <div class="tab">
+                        <div>Mis tweets</div>
+                    </div>
+                    <hr>
+                    <div id="tweet-box">
+
+                    </div>
+                </div>
             </div>
 
-            <div class="tweets-box bg-white">
-                <div class="tab">
-                    <div>Mis tweets</div>
-                </div>
-                <hr>
-                <div id="tweet-box">
+            <div class="width-25 bg-white float-left">
 
-                </div>
             </div>
 
         </main>

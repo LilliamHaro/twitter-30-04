@@ -23,6 +23,9 @@ h3 {
 
 
 /* clases reutilizables */
+.none-mobile {
+    display: none;
+}
 .bg-lightgray {
     background-color: lightgray;
 }
@@ -69,6 +72,7 @@ h3 {
     height: 20vh;
     background: lightgray;
     position: relative;
+    background-color: black;
 }
 
 .icon {
@@ -90,9 +94,7 @@ h3 {
 .bio-icon {
     height: 120px;
     width: 120px;
-    position: absolute;
-    top: 10vh;
-    left: 2vh;
+    
 }
 .bio-icon img {
     height: 120px;
@@ -104,17 +106,20 @@ h3 {
     max-width: 100%;
 }
 .bio-info {
-    margin-top: 63px;
-    padding: 0 2vh 3vh 2vh;
+    position: absolute;
+    top: 20vh;
+    left: 2vh;
+    margin-top: 15px;
+    padding: 0 1vh 2vh ;
 }
 
-li:nth-child(4n) {
+li:nth-child(6n) {
     display: inline-block;
     float: left;
     margin-right:50px;
 }
 
-.centinel:after {
+.centinel:before {
     content: '';
     background-color: lightgray;
     display: block;
@@ -153,11 +158,6 @@ li:nth-child(4n) {
     position: relative;
 }
 
-.cross {
-    position: absolute;
-    top: 1.8vh;
-    right: 2vh;
-}
 
 .icon-tweet {
     height: 65px;
@@ -202,52 +202,103 @@ li:nth-child(4n) {
 }
 
 .main-container {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    /* max-width: 400px; */
+    /* margin-left: auto;
+    margin-right: auto; */
 }
+.width-50 {
+    width: 100%;
+}
+.tweeting-zone{
+    margin-top: 180px;
+}
+
 
 /* tablet pequeña */
 @media (min-width: 600px) { 
     .main-container {
-        max-width: 800px;
+        /* max-width: 800px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; */
     }
     .text-tweet {
         width: 88%;
     }
+    .layout-data {
+        height: 0px;
+    }
+
  }
 
 /* tablet normal  */
 @media (min-width: 900px) { 
+    .layout {
+        height:33vh;
+    }
+    .bio-icon {
+        margin-bottom: 15px;
+    }
+    .icon {
+        top: 5vw;   
+    }
+    .bio-info {
+        width: 25vw;
+      
+    }
     .main-container {
         max-width: 2000px;
-        width: 95vw;
-        padding: 2vh;
+        width: 100vw;
     }
-
-    .bio{
-        width: 26vw;
-        display: inline-block;
-        float: left;
-    }
+    
     .tweeting-zone {
-        width: 66vw;
+        width: 50vw;
         display: inline-block;
-        float: right;
+        margin-top: 20px;
+        margin-left: 26vw;
+       
     }
     .tweets-box {
-        width: 66vw;
+        width: 50vw;
         display: inline-block;
-        float: right;
     }
-       
-        
+    .none-desktop {
+        display: none;
+    } 
+
+    .width-25 {
+        width: 25%;
+    }
+    .width-50 {
+        width: 50%;
+    }
+    .float-left {
+        float: left;
+        display: inline-block;
+    }
+    .bio-icon {
+        height: 190px;
+        width: 190px;
+        top: 15vh;
+        left: 5vh;
+    }
+    .bio-icon img {
+        height: 190px;
+        width: 190px;
+    }
+    .bio-info {
+        margin-top: 80px;
+        padding: 0 4vh 3vh 4vh;
+    }
+    .layout-data {
+        height: 50px;
+        background-color: pink;
+    }
  }
 
 /* desktop */
-@media (min-width: 1200px) { @content; }
+@media (min-width: 1200px) { 
+   
+ }
 
 
 
